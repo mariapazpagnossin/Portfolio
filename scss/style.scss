@@ -1,0 +1,789 @@
+@import 'reset/reset.scss' , 'reset/variables.scss' , 'reset/mixins.scss' , 'reset/keyframes.scss'  , 'reset/general.scss';
+
+
+/** HEADER MENU: para todas las páginas **/
+
+.header{
+    width: 100%;
+    height: auto;
+    margin: 0;
+
+    background-image: url(../assets/img/separadores/negro-blanco.svg);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: cover;
+
+    @include flex( row , nowrap , center , center );
+
+    &__center{
+        width: 80%;
+        height: auto;
+        padding: 3em 0;
+
+        @include flex( row , wrap , space-between , center );
+    }
+
+    &__logo{
+        width: 4.5em;
+        height: 4.5em;
+    }
+
+    &__nav{
+        @include flex( row , wrap , flex-start , center );
+
+        @media screen and (max-width: 800px){
+            display: none;
+        }
+    }
+
+    &__nav.ver{
+        width: 100vw;
+        height: 100vh;
+
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+
+        @include flex( column , nowrap , center , center );
+
+        background-color: var(--negro-trans);
+        backdrop-filter: blur(5px);
+        font-size: 1.3em;
+
+        position: fixed;
+        z-index: 1;
+
+        transition: all 0.8s ease;
+    }
+
+    &__li{
+        margin: 1em;
+    }
+
+    &__a{
+        font-size: 1.1em;
+        text-transform: uppercase;
+
+        color: var(--blanco);
+
+        &:hover{
+            color: var(--principal);
+            transition: all 0.5s ease;
+        }
+    }
+
+    /** menu movil **/
+
+    &__menumovil{
+        width: 3em;
+        height: 3em;
+        margin: 2em;
+        border-radius: 50%;
+        background-color: var(--principal);
+        cursor: pointer;
+
+        position: fixed;
+        z-index: 1;
+        right: 0;
+        bottom: 0;
+
+        display: none;
+
+        @media screen and (max-width: 800px){
+            @include flex( row , nowrap , center , center );
+        }
+    }
+
+    &__fas{
+        color: var(--blanco);
+        font-size: 1.2em;
+    }
+
+}
+
+
+/** MAIN: para todas las páginas **/
+
+.main{
+    width: 100%;
+    min-height: 90vh;
+    height: 100%;
+
+    &__center{
+        width: 80%;
+        max-width: 1200px;
+        height: auto;
+        margin: 2em 0;
+
+        @include flex( row , nowrap , space-between , flex-start );
+        
+        @media screen and (max-width: 800px){
+            @include flex( column , nowrap , space-between , center );
+        }
+    }
+
+    &__col{
+        width: calc( 90% / 2 );
+        height: auto;
+        background-color: transparent;
+
+        @media screen and (max-width: 800px){
+            width: 90%;
+        }
+    }
+
+    &__img{
+        width: 30em;
+        height: auto;
+        margin: 0.5em 0;
+
+        display: block;
+        object-fit: cover;
+        object-position: center;
+    }
+
+}
+
+
+/** HOME: PÁGINA **/
+
+.main{
+    width: 100%;
+    min-height: 90vh;
+    height: 100%;
+
+    &__presentacion{
+        width: 100%;
+        height: auto;
+    
+        @include flex( row , nowrap , center , center );
+    }
+
+    &__col-principal{
+        width: calc( 90% / 2 );
+        height: auto;
+        background-color: transparent;
+
+        @include flex( column , nowrap , flex-start , flex-start);
+
+        @media screen and (max-width: 800px){
+            width: 90%;
+        }
+    }
+
+    &__logo{
+        width: 35em;
+        height: auto;
+        margin: 3em 0;
+
+        display: block;
+        object-fit: cover;
+        object-position: center center;
+    }
+
+    &__textoprincipal{
+        font-size: 1.5em;
+        font-weight: 400;
+        text-align: left;
+        color: var(--negro);
+    }
+
+    /** home: trabajo acordeon **/
+
+    &__trabajo{
+        width: 100%;
+        height: auto;
+        background-color: var(--negro);
+
+        @include flex( row , nowrap , center , center );
+    }
+
+    &__acordeon{
+        width: auto;
+        margin: 0.5em 0 2em 0;
+        @include flex( column , nowrap , flex-start , flex-start );
+    }
+
+    &__fila{
+        width: auto;
+        padding: 1.5em 0;
+        border-bottom: solid var(--blanco) 0.1px;
+
+        @include flex( column , nowrap , flex-start , flex-start );
+
+    }
+
+    &__fila.ver{
+        .main__oculto{
+            height: auto;
+            @include flex( column , nowrap , flex-start , flex-start );
+            opacity: 1;
+        }
+    }
+
+    &__oculto{
+        height: 0;
+        overflow: hidden;
+        transition: all 0.5s ease;
+        opacity: 0;
+    }
+
+    &__seccion{
+        margin: 0.3em 0;
+        font-size: 1.2em;
+        color: var(--blanco);
+        cursor: pointer;
+
+        &:hover{
+            color: var(--principal);
+            transition: all 1s ease;
+        }
+    }
+
+    &__pacordeon{
+        margin: 0.1em 0;
+        font-size: 1em;
+        line-height: 1.4em;
+        color: var(--blanco);
+    }
+
+    /** home: vision **/
+
+    &__vision{
+        width: 100%;
+        height: auto;
+        margin: 2em 0;
+        background-color: var(--blanco);
+
+        @include flex( row , nowrap , center , center );
+    }
+
+    /** home: portafolio **/
+
+    &__portfolio{
+        width: 100%;
+        height: auto;
+        background-color: var(--negro);
+
+        @include flex( column , nowrap , center , center );
+    }
+}
+
+
+/** PORTFOLIO: PÁGINA **/
+
+.main{
+    width: 100%;
+    min-height: 90vh;
+    height: 100%;
+
+    &__proyectos-web{
+        width: 100%;
+        height: auto;
+        background-color: var(--blanco);
+    
+        @include flex( column , nowrap , center , center );
+    }
+
+    &__proyectos-diseno{
+        width: 100%;
+        height: auto;
+        background-color: var(--negro);
+    
+        @include flex( column , nowrap , center , center );
+    }
+
+    &__center-portfolio{
+        width: 80%;
+        max-width: 1200px;
+        height: auto;
+        margin: 2em 0;
+
+        @include flex( row , nowrap , center , center );
+    }
+
+    /** portfolio: grid **/
+
+    &__grid-portfolio{
+        margin: 2em 0;
+        display: grid;
+
+        grid-template-columns: repeat( 3 , 1fr);
+        gap: 2em;
+
+        @media screen and (max-width: 800px){
+            grid-template-columns: repeat( 1 , 1fr);
+            width: 95%;
+            height: 100%;
+        }
+    }
+
+}
+
+/** PÁGINAS PROYECTOS **/
+
+.main{
+    width: 100%;
+    min-height: 90vh;
+    height: 100%;
+
+    &__pagina-proyecto{
+        width: 100%;
+        height: auto;
+        background-color: var(--blanco);
+
+        @include flex( row , nowrap , center , center );
+    }
+
+    /** pagina proyecto: acordeon negro **/
+
+    &__fila{
+        &.negro{
+            border-bottom: solid var(--negro) 0.1px;
+        }
+    }
+
+    &__seccion-negro{
+        margin: 0.3em 0;
+        font-size: 1.2em;
+        color: var(--negro);
+        cursor: pointer;
+
+        &:hover{
+            color: var(--principal);
+            transition: all 1s ease;
+        }
+    }
+
+    &__pacordeon-negro{
+        margin-bottom: 0.1em 0;
+        font-size: 1em;
+        line-height: 1.4em;
+        color: var(--negro);
+    }
+
+    &__desarrollo{
+        width: 100%;
+        height: auto;
+        margin: 0;
+    
+        @include flex( column , nowrap , center , center );
+
+        &.bg-negro{
+            background-color: var(--negro);
+        }
+    }
+
+    &__cdesarrollo{
+        width: 80%;
+        max-width: 1200px;
+        height: auto;
+        margin: 1.5em 0 3.5em 0;
+
+
+
+        &.bg-negro{
+            background-color: var(--negro);
+        }
+    }
+
+    &__img-desarrollo{
+        margin: 2em 0;
+    }
+
+    &__desarrollo-titulo{
+        margin: 0;
+        font-size: 1.2em;
+        text-align: left;
+        color: var(--negro);
+        @include flex( column , nowrap , flex-start , flex-start );
+    }
+
+    &__regresar{
+        width: 100%;
+        height: auto;
+        margin: 0;
+    
+        @include flex( row , nowrap , center , center );
+    }
+
+    &__cregresar{
+        width: 80%;
+        height: auto;
+        margin: 1.5em 0;
+
+        @include flex( row , nowrap , center , center );
+    }
+
+    &__button-regresar{
+        max-width: 19em;
+        padding: 0.7em;
+        border-radius: 0.4em;
+        background-color: #008d8e;
+    
+        font-family: 'lato' , Arial , sans-serif;
+        font-size: 1.2em;
+        font-weight: 400;
+        color: #fff8e9;
+        text-align: center;
+        text-transform: uppercase;
+
+        &:hover{
+            background-color: var(--negro);
+            color: var(--blanco);
+            transition: all 1s ease;
+        }
+    }
+}
+
+
+/** SOBRE MI: PÁGINA **/
+
+.main{
+    width: 100%;
+    min-height: 90vh;
+    height: 100%;
+
+    /** sobre mi: presentacion **/
+
+    &__sobremi{
+        width: 100%;
+        height: auto;
+        margin: 2em 0;
+        background-color: var(--blanco);
+
+        @include flex( row , nowrap , center , center );
+    }
+
+    /** sobre mi: skils **/
+
+    &__skils{
+        width: 100%;
+        height: auto;
+        background-color: var(--negro);
+
+        @include flex( row , nowrap , center , center );
+    }
+
+    &__col-skils{
+        width: 100%;
+        height: auto;
+        padding: 1em;
+        border: solid var(--blanco-trans) 1px;
+        border-radius: 0.4em;
+        background-color: var(--negro);
+
+        @include flex( column , nowrap , flex-start , center );
+    }
+
+    &__icon{
+        width: 3.5em;
+        height: auto;
+        margin: 0.5em;
+
+        display: flex;
+        object-fit: cover;
+        object-position: center;
+    }
+
+    /** sobre mi: experiencia **/
+
+    &__experiencia{
+        width: 100%;
+        height: auto;
+        margin: 0;
+
+        background-color: var(--blanco);
+        @include flex( row , nowrap , center , center );
+    }
+
+    /** sobre mi: formacion **/
+
+    &__formacion{
+        width: 100%;
+        height: auto;
+        margin: 0;
+        background-color: var(--negro);
+    
+        @include flex( row , nowrap , center , center );
+    }
+
+    /** sobre mi: grid 2 y 3 **/
+
+    &__grid2{
+        margin: 2em 0;
+        display: grid;
+
+        grid-template-columns: repeat( 3 , 1fr);
+        gap: 1em;
+
+        @media screen and (max-width: 700px){
+            grid-template-columns: repeat( 1 , 1fr);
+            width: 95%;
+            height: 100%;
+        }
+    }
+
+    &__grid3{
+        margin: 2em 0;
+        display: grid;
+
+        grid-template-columns: repeat( 2 , 1fr);
+        gap: 2.5em;
+
+        @media screen and (max-width: 800px){
+            grid-template-columns: repeat( 1 , 1fr);
+            width: 95%;
+            height: 100%;
+        }
+    }
+
+}
+
+
+/** FOOTER: para todas las páginas **/
+
+.footer{
+    width: 100%;
+    height: auto;
+    background-color: var(--principal);
+
+    @include flex( row , nowrap , center , center);
+
+    &__center{
+        width: 80%;
+        height: auto;
+
+        @include flex( column , nowrap , center , center );
+    }
+
+    &__alineado{
+        width: 100%;
+        height: auto;
+    
+        @include flex( column , wrap , center , center );
+    }
+
+    &__titulo{
+        margin-top: 3em;
+        font-family: 'lato' , Arial , sans-serif;
+        font-size: 1.8em;
+        font-weight: 400;
+        text-transform: uppercase;
+        text-align: center;
+        hyphens: none;
+        color: var(--blanco);
+    }
+
+    &__contacto{
+        margin-top: 0.4em;
+        font-family: 'lato' , Arial , sans-serif;
+        font-size: 1.6em;
+        font-weight: 400;
+        text-align: center;
+        hyphens: none;
+        color: var(--blanco);
+
+        cursor: pointer;
+
+        &:hover{
+            color: var(--negro);
+            transition: all 1s ease;
+        }
+    }
+
+    &__descarga{
+        margin-top: 0.4em;
+        font-family: 'lato' , Arial , sans-serif;
+        font-size: 1.6em;
+        font-weight: 400;
+        text-align: center;
+        hyphens: none;
+        color: var(--blanco);
+
+        &:hover{
+            color: var(--negro);
+            transition: all 1s ease;
+        }
+    }
+
+    &__linea{
+        width: 8em;
+        height: 0.1px;
+        margin: 1em 0;
+        background-color: var(--blanco);
+
+        display: flex;
+    }
+
+    &__mail{
+        margin: 0.4em 0.4em 1em 0.4em;
+        font-size: 1.6em;
+        text-align: center;
+        color: var(--blanco);
+
+        &:hover{
+            color: var(--negro);
+            transition: all 1s ease;
+        }
+    }
+
+    &__texto{
+        margin: 0.4em;
+        font-size: 1.6em;
+        text-align: center;
+        color: var(--blanco);
+    }
+
+    &__ul{
+        max-width: 15.5em;
+        height: auto;
+        margin-bottom: 10em;
+
+        @include flex( row , nowrap , center , center );
+    }
+
+    &__red{
+        width: 2em;
+        height: 2em;
+        margin: 0 0.5em;
+        border-radius: 50%;
+        background-color: var(--blanco);
+
+        @include flex( row , nowrap , center , center );
+
+        &:hover{
+            background-color: var(--negro);
+            transition: all 1s ease;
+        }
+    }
+
+    &__fab{
+        font-size: 1.2em;
+        color: var(--principal);
+
+        &.fa-instagram{ 
+            font-size: 1.4em;
+        }
+
+        &.github-alt{
+            font-size: 1.6em;
+        }
+    }
+
+    &__copy{
+        max-width: 30em;
+        margin: 1em 0;
+
+        font-family: 'lato' , Arial , sans-serif;
+        font-size: 0.8em;
+        font-weight: 400;
+        text-align: center;
+        hyphens: none;
+        color: var(--blanco);
+    }
+
+}
+
+/** FOOTER: POPUP CONTACTO **/
+
+.footer{
+    width: 100%;
+    height: auto;
+    background-color: var(--principal);
+
+    @include flex( row , nowrap , center , center);
+
+    &__popup{
+        width: 100vw;
+        height: 100vh;
+    
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+    
+        background-color: var(--negro-trans);
+        backdrop-filter: blur(5px);
+        font-size: 1.3em;
+
+        position: fixed;
+        z-index: 1;
+        transition: all 0.8s ease;
+
+        display: none;
+
+        &.ver{
+            @include flex( column , nowrap , center , center );
+        }
+    }
+
+    &__aviso{
+        max-width: 30em;
+        height: auto;
+        margin: 0;
+        padding: 2em 2em 0 2em;
+
+        border-radius: 10px;    
+        background-color: var(--blanco);
+        color: var(--negro);
+
+        @include flex( row , nowrap , flex-start , flex-start );
+
+        position: fixed;
+
+        @media screen and (max-width: 700px){
+            max-width: 16em;
+            padding: 1em 1em 0 1em;
+        }        
+    }
+
+    &__aviso-texto{
+        font-family: 'lato' , Arial , sans-serif;
+        margin: 0.2em 0;
+        font-size: 1.1em;
+        @include flex( column , nowrap , flex-start , flex-start );
+
+        &.fin{
+            margin-top: 1em;
+        }
+
+        @media screen and (max-width: 700px){
+            font-size: 0.9em;
+        } 
+    }
+
+    &__aviso-titulo{
+        font-family: 'lato' , Arial , sans-serif;
+        margin-bottom: 1em;
+        font-size: 1.4em;
+        @include flex( column , nowrap , flex-start , flex-start );
+
+        @media screen and (max-width: 700px){
+            font-size: 1em;
+        } 
+    }
+
+    &__close{
+        font-size: 1.2em;
+        color: var(--principal);
+        top: 0;
+        left: 0;
+
+        @include flex( row , nowrap , flex-end , flex-end );
+        cursor: pointer;
+    }
+
+    &__img{
+        margin-top: 2em;
+    }
+
+}
+
+
+
+
+
+
+

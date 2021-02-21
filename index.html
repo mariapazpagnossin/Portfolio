@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <title>María Paz Pagnossin - Diseño Gráfico y Desarrollo Frontend</title>
+    <link rel="icon"       href="assets/img/favicon.svg" type="image/svg+xml">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+    
+    <link rel="stylesheet" href="css/style.css"/>
+    <script src="js/app.js" defer></script>
+  </head>
+
+  <body>
+
+    <!-- HEADER MENU -->
+
+    <header class="header">
+      <div class="header__center">
+
+        <a class="header__logo" href="index.html" title="logo">
+          <img src="assets/img/icono.svg" alt="logo">
+        </a>
+
+        <ul class="header__nav">
+          <li class="header__li"><a class="header__a" href="index.html" title="home">home</a></li>
+          <li class="header__li"><a class="header__a" href="paginas/sobremi.html" title="sobre mí">sobre mí</a></li>
+          <li class="header__li"><a class="header__a" href="paginas/portfolio.html" title="portfolio">portfolio</a></li>
+        </ul>
+
+      </div>
+      
+      <div class="header__menumovil">
+        <i class="header__fas fas fa-bars"></i>
+      </div>
+
+    </header>
+
+    <!-- HOME: MAIN -->
+
+    <main class="main">
+
+      <!-- HOME: PRESENTACION -->
+
+      <div class="main__presentacion">
+        <div class="main__center">
+
+          <div class="main__col-principal">
+            <img class="main__logo" src="assets/img/logo.svg" alt="logo">
+            <h1 class="main__textoprincipal">Hola, soy María Paz Pagnossin.</h1>
+            <p class="main__textoprincipal">
+              Soy <strong>diseñadora gráfica</strong>, <strong>desarrolladora web frontend</strong> y entusiasta del UXUI Design.
+            </p>
+            <p class="main__textoprincipal">¡Bienvenido a mi portfolio!</p>
+          </div>
+
+          <div class="main__col">
+            <img class="main__img" src="assets/img/home/home-foto.jpg" alt="foto María Paz Pagnossin" loading="lazy">
+          </div>
+
+        </div>
+      </div>
+
+      <div class="main__separador1"></div>
+
+      <!-- HOME: MI TRABAJO -->
+
+      <div class="main__trabajo">
+        <div class="main__center">
+
+          <div class="main__col">
+            <h2 class="main__tblanco titulo">
+              creo <strong>páginas web</strong> con especial atención a los detalles.
+            </h2>
+
+            <!-- home: mi trabajo: acordeon -->
+            <div class="main__acordeon">
+
+              <div class="main__fila">
+                <p class="main__seccion parrafo">DISEÑO GRÁFICO +</p>
+                  <div class="main__oculto">
+                    <p class="main__pacordeon parrafo">
+                      Mediante el diseño ayudo a las empresas a construir una imagen de marca atractiva, mejorando la comunicación y diseñando gráficas efectivas pensadas en el usuario.
+                      Trabajé en diversos proyectos de branding, packaging, redes sociales y diseño promocional online y offline.
+                    </p>
+                  </div>
+                </div>
+              
+              <div class="main__fila">
+                <p class="main__seccion parrafo">HTML, CSS & JAVASCRIPT +</p>
+                <div class="main__oculto">
+                  <p class="main__pacordeon parrafo">
+                    Ingresé en el programa de formación de Women 4IT en donde pude optimizar mis conocimientos en desarrollo web frontend:
+                    HTML5, CSS3, SASS (SCSS), LESS, JavaScript, JQuery, TypeScript, metodologías de trabajo, metodología BEM, aplicación de buenas prácticas de trabajo, GIT, técnicas básicas de SEO on site, keywords y gestión de páginas web con WordPress.</p>
+                </div>
+              </div>
+
+              <div class="main__fila">
+                <p class="main__seccion parrafo">METODOLOGÍA DE TRABAJO +</p>
+                <div class="main__oculto">
+                  <p class="main__pacordeon parrafo">
+                    Soy muy organizada con mi entorno de trabajo y creo que esa es la base para un buen desarrollo de proyecto en equipos multidisciplinarios.
+                    Tengo experiencia de trabajo en equipo con metodologías ágiles y normalmente utilizo tableros Kanban (Trello o MeisterTask) para organizar mis tareas tanto en proyectos grupales como individuales.</p>
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+
+          <!-- home: mi trabajo: imgs grid -->
+
+          <div class="main__col grid">
+
+            <div class="main__img-grid">
+              <a class="main__caja" href="paginas/proyectos/palazzo.html" title="diseño de redes sociales">
+                <p class="main__hover-titulo">Palazzo</p>
+                <p class="main__hover-subtitulo">Social media design</p>
+              </a>
+              <div class="main__caja-img">
+                <img src="assets/img/home/home-palazzo.jpg" alt="diseño de redes sociales" loading="lazy">
+              </div>
+            </div>
+
+            <div class="main__img-grid">
+              <a class="main__caja" href="paginas/proyectos/veronica.html" title="branding">
+                <p class="main__hover-titulo">Verónica</p>
+                <p class="main__hover-subtitulo">Branding & packaging design</p>
+              </a>
+              <div class="main__caja-img">
+                <img src="assets/img/home/home-veronica.jpg" alt="branding" loading="lazy">
+              </div>
+            </div>
+
+            <div class="main__img-grid">
+              <a class="main__caja" href="paginas/proyectos/anoka.html" title="diseño de stand">
+                <p class="main__hover-titulo">Anoka</p>
+                <p class="main__hover-subtitulo">Stand & campaña</p>
+              </a>
+              <div class="main__caja-img">
+                <img src="assets/img/home/home-anoka.jpg" alt="diseño de stand" loading="lazy">
+              </div>
+            </div>
+
+            <div class="main__img-grid">
+              <a class="main__caja" href="paginas/proyectos/robera.html" title="aviso en periódico">
+                <p class="main__hover-titulo">Robera</p>
+                <p class="main__hover-subtitulo">Carteles & avisos</p>
+              </a>
+              <div class="main__caja-img">
+                <img src="assets/img/home/home-robera.jpg" alt="aviso en periódico" loading="lazy">
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+      <div class="main__separador2"></div>
+
+      <!-- HOME: MI VISIÓN -->
+
+      <div class="main__vision">
+        <div class="main__center">
+
+          <div class="main__col">
+            <h3 class="main__tnegro titulo">
+              mi visión de un proyecto <strong>web perfecto</strong>.
+            </h3>
+            <p class="main__pnegro parrafo">
+              <strong>BRANDING +</strong>
+              Una web tiene que reflejar a la perfección el espíritu de una empresa.
+              Mi trabajo es ayudar a las empresas a construir una imagen de marca atractiva que refleje ese espíritu.
+            </p>
+            <p class="main__pnegro parrafo">
+              <strong>EXPERIENCIA DE USUARIO +</strong>
+              Como diseñadora es mi trabajo ponerme en los zapatos del usuario, saber que
+              piensa, que siente y asegurarme de que su experiencia en la web sea positiva.
+            </p>
+            <p class="main__pnegro parrafo">
+              <strong>DISEÑO VISUAL +</strong>
+              Tipografías, paleta de color, formas... ¡Todo comunica! y su correcta
+              combinación y aplicación puede generar resultados increíbles.
+            </p>
+          </div>
+
+          <div class="main__col">
+            <img class="main__img" src="assets/img/home/home-grafico.svg" alt="gráfico">
+          </div>
+
+        </div>
+      </div>
+
+      <div class="main__separador1"></div>
+
+      <!-- HOME: PORTFOLIO -->
+
+      <div class="main__portfolio">
+        <div class="main__center">
+          <div class="main__col">
+            <h4 class="main__tblanco titulo">un buen <strong>diseño</strong> habla más que mil palabras. ¡conozca mi trabajo!</h4>
+            <a class="main__buttonnegro button" href="paginas/portfolio.html" title="portfolio">portfolio +</a>
+          </div>
+          <div class="main__col">
+            <img class="main__img" src="assets/img/home/home-ordenador.jpg" alt="ordenador" loading="lazy">
+          </div>
+        </div>
+      </div>
+
+      <div class="main__separador-color"></div>
+
+    </main>
+
+    <!-- FOOTER -->
+
+    <footer class="footer">
+
+      <!-- pop up contacto -->
+
+      <div class="footer__popup">
+        <div class="footer__aviso">
+          <div>
+            <p class="footer__aviso-titulo">¿Tomamos un café virtual?</p>
+            <p class="footer__aviso-texto">Si le gustó mi perfil escríbame a</p>
+            <a class="footer__aviso-texto strong" href="mailto:hola@mariapazpagnossin.com" title="mail">hola@mariapazpagnossin.com</a>
+            <p class="footer__aviso-texto">o llámeme al +34631007009.</p>
+            <p class="footer__aviso-texto fin">¡Los mejores proyectos nacen con un café!</p>
+
+            <img class="footer__img" src="assets/img/contacto.jpg" alt="contacto" loading="lazy">
+          </div>
+
+          <i class="footer__close fas fa-times"></i>
+        </div>
+      </div>
+
+      <!-- footer -->
+
+      <div class="footer__center">
+        <p class="footer__titulo">¿comenzamos un proyecto?</p>
+        <div class="footer__contacto">¡Contácteme!</div>
+        <div class="footer__linea"></div>
+        <a class="footer__mail" href="mailto:hola@mariapazpagnossin.com" title="mail">hola@mariapazpagnossin</a>
+
+        <ul class="footer__ul">
+          <li>
+            <a class="footer__red" href="https://www.behance.net/mariapazpagnossin" target="_blank" rel="noopener noreferrer" title="behance">
+              <i class="footer__fab fab fa-behance"></i>
+            </a>
+          </li>
+
+          <li>
+            <a class="footer__red github" href="https://github.com/mariapazpagnossin" target="_blank" rel="noopener noreferrer" title="github">
+              <i class="footer__fab fab fa-github-alt"></i>
+            </a>
+          </li>
+
+          <li>
+            <a class="footer__red" href="https://www.linkedin.com/in/mariapazpagnossin/" target="_blank" rel="noopener noreferrer" title="linkedin">
+              <i class="footer__fab fab fa-linkedin-in"></i>
+            </a>
+          </li>
+
+          <li>
+            <a class="footer__red" href="https://www.instagram.com/mariapazpagnossin/" target="_blank" rel="noopener noreferrer" title="instagram">
+              <i class="footer__fab fab fa-instagram"></i>
+            </a>
+          </li>
+        </ul>
+
+        <p class="footer__copy">Diseñado por María Paz Pagnossin © Todos los derechos reservados</p>
+      </div>
+    </footer>
+
+  </body>
+</html>

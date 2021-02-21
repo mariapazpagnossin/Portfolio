@@ -1,0 +1,300 @@
+
+/** CLASES CON PROPIEDADES GENERALES: grid, textos y buttons **/
+
+/** GRID **/
+
+.grid{
+    margin: 2em 0;
+    display: grid;
+
+    grid-template-columns: repeat( 2 , 1fr);
+    gap: 1em;
+
+    @media screen and (max-width: 600px){
+        grid-template-columns: repeat( 1 , 1fr);
+        width: 95%;
+        height: 100%;
+    }
+}
+
+.grid-3img{
+    margin: 2em 0;
+    display: grid;
+
+    grid-template-columns: repeat( 3 , 1fr);
+    gap: 1em;
+
+    @media screen and (max-width: 800px){
+        grid-template-columns: repeat( 2 , 1fr);
+    }
+
+    @media screen and (max-width: 600px){
+        grid-template-columns: repeat( 1 , 1fr);
+        width: 95%;
+        height: 100%;
+    }
+}
+
+/** home: grid con imagenes **/
+
+.main__img-grid{
+    width: 100%;
+    height: auto;
+
+    @include flex( row , nowrap , center , center);
+
+    position: relative;
+}
+
+.main__caja{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+
+    background-color: var(--negro);
+    opacity: 0;
+
+    @include flex( column , nowrap , center , center );
+    
+    &:hover{
+        opacity: 90%;
+        transition: all 0.8s ease;
+    }
+}
+
+.main__caja-img{
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+    object-position: center center;
+}
+
+.main__hover-titulo , .main__hover-subtitulo{
+    margin: 0.1em;
+
+    font-family: 'lato' , Arial , sans-serif;
+    font-size: 1.5em;
+    font-weight: 400;
+    color: var(--blanco);
+    text-transform: uppercase;
+    text-align: center;
+    hyphens: none;
+
+    @media screen and (max-width: 1000px){
+        font-size: 1.1em;
+    }
+}
+
+.main__hover-subtitulo{
+    font-size: 1.1em;
+    text-transform: none;
+    font-style: italic;
+
+    @media screen and (max-width: 1000px){
+        font-size: 0.9em;
+    }
+}
+
+
+/** TITULOS GENERALES **/
+
+.titulo{
+    margin-bottom: 0.4em;
+    font-family: 'lato' , Arial , sans-serif;
+    font-size: 2em;
+    font-weight: 400;
+    text-align: left;
+    text-transform: uppercase;
+    hyphens: none;
+}
+
+.main__tblanco{
+    color: var(--blanco);
+}
+
+.main__tnegro{
+    color: var(--negro);
+}
+
+.main__tcolor{
+    /** para subtitulos proyectos **/
+    margin: 0;
+    font-family: 'lato' , Arial , sans-serif;
+    font-size: 1.5em;
+    font-weight: 400;
+    text-align: left;
+    hyphens: none;
+    color: var(--principal);
+}
+
+/** apartados de titulos **/
+
+.main__apartado{
+    width: 100%;
+    height: auto;
+    margin: 0;
+    background-color: var(--blanco);
+
+    @include flex( row , wrap , center , center );
+}
+
+.main__apartadonegro{
+    width: 100%;
+    height: auto;
+    margin: 0;
+    background-color: var(--negro);
+
+    @include flex( row , wrap , center , center );
+}
+
+.main__capartado{
+    width: 80%;
+    max-width: 1200px;
+    height: auto;
+    margin: 0;
+
+    @include flex( row , wrap , flex-start , flex-start );
+}
+
+/** PARRAFOS GENERALES **/
+
+.parrafo{
+    max-width: 30em;
+    font-family: 'lato' , Arial , sans-serif;
+    font-size: 1.2em;
+    font-weight: 400;
+    text-align: left;
+    line-height: 1.4em;
+    hyphens: none;
+
+    @include flex ( row , wrap , flex-start , flex-start);
+}
+
+.main__pnegro{
+    margin: 0.5em 0;
+    color: var(--negro);
+}
+
+.main__pblanco{
+    margin: 0.5em 0;
+    color: var(--blanco);
+}
+
+.parrafo-color{
+    font-size: 1.5em;
+    color: var(--principal);
+}
+
+.parrafo-italic{
+    font-size: 1.2em;
+    font-weight: 400;
+    font-style: italic;
+    opacity: 60%;
+}
+
+/** parrafos solo para "sobre mi: skils" **/
+
+.parrafo-skils{
+    margin: 0.4em 1em;
+    font-size: 1em;
+    font-weight: 400;
+    text-align: center;
+}
+
+.parrafo-color-skils{
+    margin: 0.5 1em;
+    font-size: 1.2em;
+    font-weight: 400;
+    text-align: center;
+
+    color: var(--principal);
+    text-transform: uppercase;
+}
+
+/** STRONG Y PALABRAS DESTACADAS COLOR **/
+
+strong , .strong{
+    color: var(--principal);
+    font-weight: 400;
+    hyphens: none;
+}
+
+/** BUTTONS **/
+
+.button{
+    max-width: 9em;
+    padding: 0.7em;
+    margin: 2em 0;
+	border-radius: 0.4em;
+	background-color: #008d8e;
+
+	font-family: 'lato' , Arial , sans-serif;
+	font-size: 1.2em;
+	font-weight: 400;
+	color: #fff8e9;
+    text-align: center;
+    text-transform: uppercase;
+    hyphens: none;
+
+    display: flex;
+    justify-content: center;
+}
+
+.main__buttonnegro{
+    &:hover{
+        background-color: var(--blanco);
+        color: var(--negro);
+        transition: all 1s ease;
+    }
+}
+
+.main__buttonblanco{
+    &:hover{
+        background-color: var(--negro);
+        color: var(--blanco);
+        transition: all 1s ease;
+    }
+}
+
+/** SEPARADORES GENERALES **/
+
+.main__separador1{
+    width: 100%;
+    height: 10em;
+    margin: 0;
+    background-image: url(../assets/img/separadores/blanco-negro.svg);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: cover;
+}
+
+.main__separador2{
+    width: 100%;
+    height: 10em;
+    margin: 0;
+    background-image: url(../assets/img/separadores/negro-blanco.svg);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: cover;
+}
+
+.main__separador-color{
+    width: 100%;
+    height: 10em;
+    margin: 0;
+    background-image: url(../assets/img/separadores/negro-color.svg);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: cover;
+}
+
+.main__separador-color2{
+    width: 100%;
+    height: 10em;
+    margin: 0;
+    background-image: url(../assets/img/separadores/blanco-color.svg);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: cover;
+}

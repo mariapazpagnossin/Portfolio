@@ -522,6 +522,7 @@ strong, .strong {
 }
 .main__presentacion {
   width: 100%;
+  margin-top: 1em;
   height: auto;
   display: flex;
   flex-flow: row nowrap;
@@ -905,9 +906,17 @@ strong, .strong {
   width: 100%;
   height: auto;
   display: flex;
-  flex-flow: column wrap;
+  flex-flow: row nowrap;
   justify-content: center;
-  align-content: center;
+  align-items: center;
+}
+@media screen and (max-width: 700px) {
+  .footer__alineado {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-content: center;
+  }
 }
 .footer__titulo {
   margin-top: 3em;
@@ -921,7 +930,7 @@ strong, .strong {
   color: var(--blanco);
 }
 .footer__contacto {
-  margin-top: 0.4em;
+  margin: 0.4em 0em 1em 0;
   font-family: "lato", Arial, sans-serif;
   font-size: 1.6em;
   font-weight: 400;
@@ -936,7 +945,7 @@ strong, .strong {
   transition: all 1s ease;
 }
 .footer__descarga {
-  margin-top: 0.4em;
+  margin: 0.4em 0.2em 1em 0;
   font-family: "lato", Arial, sans-serif;
   font-size: 1.6em;
   font-weight: 400;
@@ -948,6 +957,11 @@ strong, .strong {
 .footer__descarga:hover {
   color: var(--negro);
   transition: all 1s ease;
+}
+@media screen and (max-width: 700px) {
+  .footer__descarga {
+    margin: 0.4em 0.2em 0em 0;
+  }
 }
 .footer__linea {
   width: 8em;

@@ -181,6 +181,21 @@
         display: block;
         object-fit: cover;
         object-position: center center;
+
+        animation: aparecerLogo 3s ease both;
+
+
+        @media screen and (max-width: 800px){
+            animation: none;
+        }
+    }
+
+    &__animation{
+        animation: aparecerTexto 3s ease both;
+
+        @media screen and (max-width: 800px){
+            animation: none;
+        }
     }
 
     &__textoprincipal{

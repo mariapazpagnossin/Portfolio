@@ -73,6 +73,26 @@ body {
   --principal: #008d8e;
 }
 
+@keyframes aparecerLogo {
+  from {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0%);
+    opacity: 1;
+  }
+}
+@keyframes aparecerTexto {
+  from {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0%);
+    opacity: 1;
+  }
+}
 /** CLASES CON PROPIEDADES GENERALES: grid, textos y buttons **/
 /** GRID **/
 .grid {
@@ -550,6 +570,20 @@ strong, .strong {
   display: block;
   object-fit: cover;
   object-position: center center;
+  animation: aparecerLogo 3s ease both;
+}
+@media screen and (max-width: 800px) {
+  .main__logo {
+    animation: none;
+  }
+}
+.main__animation {
+  animation: aparecerTexto 3s ease both;
+}
+@media screen and (max-width: 800px) {
+  .main__animation {
+    animation: none;
+  }
 }
 .main__textoprincipal {
   font-size: 1.5em;

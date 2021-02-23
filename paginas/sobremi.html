@@ -266,7 +266,10 @@
             <a class="footer__aviso-texto strong" href="mailto:hola@mariapazpagnossin.com" title="mail">hola@mariapazpagnossin.com</a>
             <p class="footer__aviso-texto fin">¡Los mejores proyectos nacen con un café!</p>
 
-            <img class="footer__img" src="../assets/img/contacto.jpg" alt="contacto" loading="lazy">
+            <picture>
+              <source class="footer__img" media="(max-width:500px)" srcset="../assets/img/contacto.webp">
+              <img class="footer__img" src="../assets/img/contacto.jpg" alt="contacto" style="width:auto;" loading="lazy">
+            </picture>
           </div>
 
           <i class="footer__close fas fa-times"></i>

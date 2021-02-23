@@ -63,7 +63,10 @@
           </div>
 
           <div class="main__col">
-            <video class="main__img" src="assets/video/home-foto.mp4" autoplay loop muted></video>
+            <video class="main__img" autoplay loop muted>
+              <source src="assets/video/home-foto.mp4" type="video/mp4">
+              <source src="assets/video/home-foto.webm" type="video/webm">
+            </video>
           </div>
 
         </div>
@@ -126,7 +129,10 @@
                 <p class="main__hover-subtitulo">Redes sociales +</p>
               </a>
               <div class="main__caja-img">
-                <img src="assets/img/home/home-palazzo.jpg" alt="diseño de redes sociales" loading="lazy">
+                <picture>
+                  <source media="(max-width:500px)" srcset="assets/img/home/home-palazzo.webp">
+                  <img src="assets/img/home/home-palazzo.jpg" alt="diseño de redes sociales" style="width:auto;" loading="lazy">
+                </picture>
               </div>
             </div>
 
@@ -136,7 +142,10 @@
                 <p class="main__hover-subtitulo">Branding y packaging +</p>
               </a>
               <div class="main__caja-img">
-                <img src="assets/img/home/home-veronica.jpg" alt="branding" loading="lazy">
+                <picture>
+                  <source media="(max-width:500px)" srcset="assets/img/home/home-veronica.webp">
+                  <img src="assets/img/home/home-veronica.jpg" alt="diseño de redes sociales" style="width:auto;" loading="lazy">
+                </picture>
               </div>
             </div>
 
@@ -146,7 +155,10 @@
                 <p class="main__hover-subtitulo">Campaña y stand +</p>
               </a>
               <div class="main__caja-img">
-                <img src="assets/img/home/home-anoka.jpg" alt="diseño de stand" loading="lazy">
+                <picture>
+                  <source media="(max-width:500px)" srcset="assets/img/home/home-anoka.webp">
+                  <img src="assets/img/home/home-anoka.jpg" alt="diseño de redes sociales" style="width:auto;" loading="lazy">
+                </picture>
               </div>
             </div>
 
@@ -156,7 +168,10 @@
                 <p class="main__hover-subtitulo">Carteles y avisos +</p>
               </a>
               <div class="main__caja-img">
-                <img src="assets/img/home/home-robera.jpg" alt="aviso en periódico" loading="lazy">
+                <picture>
+                  <source media="(max-width:500px)" srcset="assets/img/home/home-robera.webp">
+                  <img src="assets/img/home/home-robera.jpg" alt="diseño de redes sociales" style="width:auto;" loading="lazy">
+                </picture>
               </div>
             </div>
 
@@ -210,7 +225,11 @@
             <a class="main__buttonnegro button" href="paginas/portfolio.html" title="portfolio">portfolio +</a>
           </div>
           <div class="main__col">
-            <img class="main__img" src="assets/img/home/home-ordenador.jpg" alt="ordenador" loading="lazy">
+
+            <picture>
+              <source class="main__img" media="(max-width:500px)" srcset="assets/img/home/home-ordenador.webp">
+              <img class="main__img" src="assets/img/home/home-ordenador.jpg" alt="ordenador" style="width:auto;" loading="lazy">
+            </picture>
           </div>
         </div>
       </div>
@@ -233,7 +252,10 @@
             <a class="footer__aviso-texto strong" href="mailto:hola@mariapazpagnossin.com" title="mail">hola@mariapazpagnossin.com</a>
             <p class="footer__aviso-texto fin">¡Los mejores proyectos nacen con un café!</p>
 
-            <img class="footer__img" src="assets/img/contacto.jpg" alt="contacto" loading="lazy">
+            <picture>
+              <source class="footer__img" media="(max-width:500px)" srcset="assets/img/contacto.webp">
+              <img class="footer__img" src="assets/img/contacto.jpg" alt="contacto" style="width:auto;" loading="lazy">
+            </picture>
           </div>
 
           <i class="footer__close fas fa-times"></i>

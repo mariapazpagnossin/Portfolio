@@ -252,7 +252,7 @@ body {
   height: auto;
   margin: 0;
   display: flex;
-  flex-flow: row wrap;
+  flex-flow: column wrap;
   justify-content: flex-start;
   align-content: flex-start;
 }

@@ -154,7 +154,7 @@
     height: auto;
     margin: 0;
 
-    @include flex( row , wrap , flex-start , flex-start );
+    @include flex( column , wrap , flex-start , flex-start );
 }
 
 /** PARRAFOS GENERALES **/

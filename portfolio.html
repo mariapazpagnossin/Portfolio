@@ -5,14 +5,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     
     <title>Portfolio - María Paz Pagnossin</title>
-    <link rel="icon"       href="../assets/img/favicon.svg" type="image/svg+xml">
+    <link rel="icon"       href="assets/img/favicon.svg" type="image/svg+xml">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous"/>
+
+    <meta name="description" content="Hola, soy María Paz Pagnossin. Soy diseñadora UX/UI, diseñadora gráfica y desarrolladora web frontend. ¡Conozca mi portfolio de trabajo!"/>
+    <meta name="keywords" content="diseño UX/UI, experiencia de usuario, diseño, diseño gráfico, desarrollo frontend, UX/UI design, user experience, design, graphic design, frontend development"/>
+    <meta name="author" content="María Paz Pagnossin"/>
+    <meta name="copyright" content="María Paz Pagnossin"/>
+    <meta name="robots" content="index"/>
+    <meta property=”og:image” content=”https://mariapazpagnossin.com/assets/img/portfolio/portada-web-personal.jpg”/>
     
-    <link rel="stylesheet" href="../css/style.css"/>
-    <script src="../js/app.js" defer></script>
+    <link rel="stylesheet" href="css/style.css"/>
+    <script src="js/app.js" defer></script>
   </head>
 
   <body>
@@ -22,17 +29,15 @@
     <header class="header">
       <div class="header__center">
 
-        <a class="header__logo" href="../index.html" title="logo">
-          <img src="../assets/img/icono.svg" alt="logo">
+        <a class="header__logo" href="https://mariapazpagnossin.com" title="logo">
+          <img src="assets/img/icono.svg" alt="logo">
         </a>
 
         <ul class="header__nav">
-          <li class="header__li"><a class="header__a" href="../index.html" title="home">home</a></li>
-          <li class="header__li"><a class="header__a" href="sobremi.html" title="sobre mí">sobre mí</a></li>
-          <li class="header__li"><a class="header__a" href="portfolio.html" title="portfolio">portfolio</a></li>
+          <li class="header__li"><a class="header__a" href="https://mariapazpagnossin.com" title="home">home</a></li>
+          <li class="header__li"><a class="header__a" href="https://mariapazpagnossin.com/sobremi" title="sobre mí">sobre mí</a></li>
+          <li class="header__li"><a class="header__a" href="https://mariapazpagnossin.com/portfolio" title="portfolio">portfolio</a></li>
         </ul>
-
-      </div>
       
       <div class="header__menumovil">
         <i class="header__fas fas fa-bars"></i>
@@ -65,7 +70,10 @@
                 <p class="main__hover-subtitulo">Práctica web +</p>
               </a>
               <div class="main__caja-img">
-                <img src="../assets/img/portfolio/portada-pixar.jpeg" alt="práctica web pixar" loading="lazy">
+                <picture>
+                  <source media="(max-width:500px)" srcset="assets/img/portfolio/portada-pixar.webp">
+                  <img src="assets/img/portfolio/portada-pixar.jpeg" alt="práctica web pixar" loading="lazy">
+                </picture>
               </div>
             </div>
 
@@ -75,7 +83,10 @@
                 <p class="main__hover-subtitulo">Práctica web +</p>
               </a>
               <div class="main__caja-img">
-                <img src="../assets/img/portfolio/portada-sillas.jpg" alt="práctica web stockholm" loading="lazy">
+                <picture>
+                  <source media="(max-width:500px)" srcset="assets/img/portfolio/portada-sillas.webp">
+                  <img src="assets/img/portfolio/portada-sillas.jpg" alt="práctica web stockholm" loading="lazy">
+                </picture>
               </div>
             </div>
   
@@ -85,7 +96,10 @@
                 <p class="main__hover-subtitulo">¡Puede ver el código en Github! +</p>
               </a>
               <div class="main__caja-img">
-                <img src="../assets/img/portfolio/portada-web-personal.jpg" alt="portfolio web" loading="lazy">
+                <picture>
+                  <source media="(max-width:500px)" srcset="assets/img/portfolio/portada-web-personal.webp">
+                  <img src="assets/img/portfolio/portada-web-personal.jpg" alt="código portfolio web" loading="lazy">
+                </picture>
               </div>
             </div>
 
@@ -110,62 +124,80 @@
           <div class="main__grid-portfolio">
 
             <div class="main__img-grid">
-              <a class="main__caja" href="proyectos/cricket.html" title="diseño de app">
+              <a class="main__caja" href="https://mariapazpagnossin.com/proyectos/cricket" title="diseño de app">
                 <p class="main__hover-titulo">cricket</p>
                 <p class="main__hover-subtitulo">Diseño de APP +</p>
               </a>
               <div class="main__caja-img">
-                <img src="../assets/img/portfolio/portada-cricket.jpg" alt="diseño de app" loading="lazy">
+                <picture>
+                  <source media="(max-width:500px)" srcset="assets/img/portfolio/portada-cricket.webp">
+                  <img src="assets/img/portfolio/portada-cricket.jpg" alt="diseño de APP" loading="lazy">
+                </picture>
               </div>
             </div>
 
             <div class="main__img-grid">
-              <a class="main__caja" href="proyectos/palazzo.html" title="diseño de redes sociales">
+              <a class="main__caja" href="https://mariapazpagnossin.com/proyectos/palazzo" title="diseño de redes sociales">
                 <p class="main__hover-titulo">palazzo</p>
                 <p class="main__hover-subtitulo">Diseño de redes sociales +</p>
               </a>
               <div class="main__caja-img">
-                <img src="../assets/img/portfolio/portada-palazzo.jpg" alt="diseño de redes sociales" loading="lazy">
+                <picture>
+                  <source media="(max-width:500px)" srcset="assets/img/portfolio/portada-palazzo.webp">
+                  <img src="assets/img/portfolio/portada-palazzo.jpg" alt="diseño de redes sociales" loading="lazy">
+                </picture>
               </div>
             </div>
 
             <div class="main__img-grid">
-              <a class="main__caja" href="proyectos/renovize.html" title="diseño de packaging">
+              <a class="main__caja" href="https://mariapazpagnossin.com/proyectos/renovize" title="diseño de packaging">
                 <p class="main__hover-titulo">renovize</p>
                 <p class="main__hover-subtitulo">Diseño de packaging +</p>
               </a>
               <div class="main__caja-img">
-                <img src="../assets/img/portfolio/portada-renovize.jpg" alt="diseño de packaging" loading="lazy">
+                <picture>
+                  <source media="(max-width:500px)" srcset="assets/img/portfolio/portada-renovize.webp">
+                  <img src="assets/img/portfolio/portada-renovize.jpg" alt="diseño de packaging" loading="lazy">
+                </picture>
               </div>
             </div>
 
             <div class="main__img-grid">
-              <a class="main__caja" href="proyectos/veronica.html" title="verónica branding">
+              <a class="main__caja" href="https://mariapazpagnossin.com/proyectos/veronica" title="verónica branding">
                 <p class="main__hover-titulo">verónica</p>
                 <p class="main__hover-subtitulo">Branding y diseño de packaging +</p>
               </a>
               <div class="main__caja-img">
-                <img src="../assets/img/portfolio/portada-veronica.jpg" alt="verónica branding" loading="lazy">
+                <picture>
+                  <source media="(max-width:500px)" srcset="assets/img/portfolio/portada-veronica.webp">
+                  <img src="assets/img/portfolio/portada-veronica.jpg" alt="branding" loading="lazy">
+                </picture>
               </div>
             </div>
 
             <div class="main__img-grid">
-              <a class="main__caja" href="proyectos/robera.html" title="diseño newspaper">
+              <a class="main__caja" href="https://mariapazpagnossin.com/proyectos/robera" title="diseño newspaper">
                 <p class="main__hover-titulo">robera</p>
                 <p class="main__hover-subtitulo">Carteles y avisos en periódicos +</p>
               </a>
               <div class="main__caja-img">
-                <img src="../assets/img/portfolio/portada-robera.jpg" alt="diseño newspaper" loading="lazy">
+                <picture>
+                  <source media="(max-width:500px)" srcset="assets/img/portfolio/portada-robera.webp">
+                  <img src="assets/img/portfolio/portada-robera.jpg" alt="diseño newspaper" loading="lazy">
+                </picture>
               </div>
             </div>
 
             <div class="main__img-grid">
-              <a class="main__caja" href="proyectos/anoka.html" title="agua anoka">
+              <a class="main__caja" href="https://mariapazpagnossin.com/proyectos/anoka" title="agua anoka">
                 <p class="main__hover-titulo">anoka</p>
                 <p class="main__hover-subtitulo">Campaña y diseño de stand +</p>
               </a>
               <div class="main__caja-img">
-                <img src="../assets/img/portfolio/portada-anoka.jpg" alt="agua anoka" loading="lazy">
+                <picture>
+                  <source media="(max-width:500px)" srcset="assets/img/portfolio/portada-anoka.webp">
+                  <img src="assets/img/portfolio/portada-anoka.jpg" alt="diseño de stand" loading="lazy">
+                </picture>
               </div>
             </div>
 
@@ -193,8 +225,8 @@
             <p class="footer__aviso-texto fin">¡Los mejores proyectos nacen con un café!</p>
 
             <picture>
-              <source class="footer__img" media="(max-width:500px)" srcset="../assets/img/contacto.webp">
-              <img class="footer__img" src="../assets/img/contacto.jpg" alt="contacto" style="width:auto;" loading="lazy">
+              <source class="footer__img" media="(max-width:500px)" srcset="assets/img/contacto.webp">
+              <img class="footer__img" src="assets/img/contacto.jpg" alt="contacto" style="width:auto;" loading="lazy">
             </picture>
 
           </div>

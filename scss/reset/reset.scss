@@ -22,6 +22,17 @@ a{
     color:inherit;
     font-size:inherit;
 }
+
+.a{
+    display: inline;
+    text-decoration: none;
+    color:inherit;
+    font-size:inherit;
+
+    &:hover{
+        color: var(--principal);
+    }
+}
   
 video{
     max-width: 100%;

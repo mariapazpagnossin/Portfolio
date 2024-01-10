@@ -21,6 +21,9 @@
         padding: 3em 0;
 
         @include flex( row , wrap , space-between , center );
+        @media screen and (max-width: 800px){
+            padding: 1em 0;
+        }
     }
 
     &__logo{
@@ -120,6 +123,7 @@
         
         @media screen and (max-width: 800px){
             @include flex( column , nowrap , space-between , center );
+            width: 95%;
         }
     }
 
@@ -141,6 +145,11 @@
         display: block;
         object-fit: cover;
         object-position: center;
+
+        @media screen and (max-width: 800px){
+            margin: 1.8em 0;
+
+        }
     }
 
 }
@@ -159,6 +168,10 @@
         height: auto;
     
         @include flex( row , nowrap , center , center );
+
+        @media screen and (max-width: 800px){
+            margin-top: 0;
+        }
     }
 
     &__col-principal{
@@ -174,7 +187,7 @@
     }
 
     &__logo{
-        width: 35em;
+        width: 30em;
         height: auto;
         margin: 3em 0;
 
@@ -187,6 +200,7 @@
 
         @media screen and (max-width: 800px){
             animation: none;
+            margin: 0 0 3em 0;
         }
     }
 
@@ -222,7 +236,7 @@
     }
 
     &__fila{
-        width: auto;
+        width: 100%;
         padding: 1.5em 0;
         border-bottom: solid var(--blanco) 0.1px;
 
@@ -258,7 +272,7 @@
     }
 
     &__pacordeon{
-        margin: 0.1em 0;
+        margin: 0.2em 0;
         font-size: 1em;
         line-height: 1.4em;
         color: var(--blanco);
@@ -317,6 +331,11 @@
         margin: 2em 0;
 
         @include flex( row , nowrap , center , center );
+
+        @media screen and (max-width: 960px){
+            width: 95%;
+            margin: 0;
+        }
     }
 
     /** portfolio: grid **/
@@ -332,6 +351,7 @@
             grid-template-columns: repeat( 1 , 1fr);
             width: 95%;
             height: 100%;
+            gap: 1em;
         }
     }
 
@@ -373,7 +393,7 @@
     }
 
     &__pacordeon-negro{
-        margin-bottom: 0.1em 0;
+        margin: 0.2em 0;
         font-size: 1em;
         line-height: 1.4em;
         color: var(--negro);
@@ -397,10 +417,12 @@
         height: auto;
         margin: 1.5em 0 3.5em 0;
 
-
-
         &.bg-negro{
             background-color: var(--negro);
+        }
+        @media screen and (max-width: 960px){
+            width: 95%;
+            margin: 1em 0;
         }
     }
 
@@ -520,7 +542,7 @@
         width: 100%;
         height: auto;
         margin: 0;
-        background-color: var(--negro);
+        background-color: var(--blanco);
     
         @include flex( row , nowrap , center , center );
     }
@@ -572,6 +594,10 @@
         height: auto;
 
         @include flex( column , nowrap , center , center );
+
+        @media screen and (max-width: 960px){
+            width: 95%;
+        }
     }
 
     &__alineado{
@@ -594,6 +620,11 @@
         text-align: center;
         hyphens: none;
         color: var(--blanco);
+
+        @media screen and (max-width: 960px){
+            font-size: 1.4em;
+            margin-top: 3em;
+        }
     }
 
     &__contacto{
@@ -610,6 +641,10 @@
         &:hover{
             color: var(--negro);
             transition: all 1s ease;
+        }
+
+        @media screen and (max-width: 960px){
+            font-size: 1.4em;
         }
     }
 
@@ -665,6 +700,10 @@
         margin-bottom: 10em;
 
         @include flex( row , nowrap , center , center );
+
+        @media screen and (max-width: 960px){
+            margin-bottom: 8em;
+        }
     }
 
     &__red{

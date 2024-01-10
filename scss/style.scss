@@ -18,7 +18,7 @@
     &__center{
         width: 80%;
         height: auto;
-        padding: 3em 0;
+        padding: 5em 0;
 
         @include flex( row , wrap , space-between , center );
         @media screen and (max-width: 800px){
@@ -121,7 +121,7 @@
 
         @include flex( row , nowrap , space-between , flex-start );
         
-        @media screen and (max-width: 800px){
+        @media screen and (max-width: 900px){
             @include flex( column , nowrap , space-between , center );
             width: 95%;
         }
@@ -132,7 +132,7 @@
         height: auto;
         background-color: transparent;
 
-        @media screen and (max-width: 800px){
+        @media screen and (max-width: 900px){
             width: 90%;
         }
     }

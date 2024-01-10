@@ -4,14 +4,13 @@
 Desarrollo Web Frontend & Diseño Gráfico
 - Portfolio web personal realizado durante el curso de Desarrollo Web Frontend de Bejob y Women 4IT.
 - Desarrollado con HTML5, CSS3 y JavaScript.
-- Web: https://mariapazpagnossin.com/
 
 
 ## Autora: María Paz Pagnossin 🔗
 - Github: https://github.com/mariapazpagnossin
 - LinkedIn: https://linkedin.com/in/mariapazpagnossin
 - Behance: https://www.behance.net/mariapazpagnossin
-- Contacto: hola@mariapazpagnossin.com
+- Contacto: pagnossindesign@gmail.com
 
 
 ## Curso Desarrollo Web Front End 📌 
